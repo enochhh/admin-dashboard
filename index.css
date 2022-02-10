@@ -107,7 +107,8 @@ a {
 }
 
 .project-header {
-    font-size: 5em;
+    font-size: 3em;
+    padding: 20px 0px 0px 20px;
 }
 
 .projects {
@@ -120,7 +121,7 @@ a {
     grid-auto-rows: 1fr;
     gap: 4rem 2.5rem;
     justify-self: center;
-    padding: 4rem 2rem;
+    padding: 1rem 2rem;
 }
 
 
@@ -133,17 +134,20 @@ a {
     font-size: 4rem;
 }
 
-.content-right {
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-self: start;
-    align-self: start;
-    padding:30px;
-    gap: 20px;
-    
+.content-right-container{
+    display:flex;
+    flex-direction: column;
+    gap: 15rem;
+    padding: 20px;
+    justify-content: start;
+}
+
+.ann-header, .tren-header {
+    font-size: 3rem;
+    padding-bottom:1rem;
 }
 
 .main-menu {
     display:grid;
 }
+
