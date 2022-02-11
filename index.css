@@ -11,7 +11,7 @@
 .container {
     height:100vh;
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: 1fr 6fr;
 }
 
@@ -28,6 +28,8 @@ a {
     background-color: rgb(123, 123, 233);
     display:grid;
     grid-template-rows: 1fr 2fr;
+    grid-column: 2/4;
+    grid-row: 1/2;
     font-size: 2.5rem;
     padding: 10px;
 }
@@ -82,6 +84,7 @@ a {
 
 .sidebar {
     background-color: rgb(240, 144, 144);
+    grid-column: 1/2;
     grid-row:1/3;
     display:flex;
     flex-direction: column;
@@ -91,19 +94,35 @@ a {
     padding: 20px;
 }
 
+.big-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
 .main-content {
     background-color: rgb(128, 241, 128);
-    grid-column: 2/3;
-    grid-row: 2/3;
+    grid-column: 1/2;
+    grid-row: 1/3;
     display: grid;
     grid-template-columns: 3fr 1fr;
     height:100%
 }
 
+.main-sidebar {
+    grid-row:1/3;
+    grid-column: 2/3;
+    background-color: rgb(235, 129, 129);
+    padding: 2rem 2rem;;
+}   
+
 .project-container {
     background-color: aqua;
     display: flex;
     flex-direction: column;
+    grid-column: 1/3;
+    min-width: 55rem;
 }
 
 .project-header {
@@ -115,16 +134,14 @@ a {
     grid-row: 2/3;
     display: grid;
     background-color:purple;
-    width: 100%;
+    width: 100%;   
     grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
-    grid-template-rows:1fr 1fr 1fr;
+    grid-template-rows:repeat(3, 1fr);
     grid-auto-rows: 1fr;
     gap: 4rem 2.5rem;
     justify-self: center;
     padding: 1rem 2rem;
 }
-
-
 
 
 .project-item, .content-right-item {
@@ -134,12 +151,30 @@ a {
     font-size: 4rem;
 }
 
+.content-right-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    font-size: 2.3rem;
+}
+
 .content-right-container{
-    display:flex;
+    /* display:flex;
     flex-direction: column;
     gap: 15rem;
     padding: 20px;
-    justify-content: start;
+    justify-content: start; */
+    display: grid;
+    grid-template-columns: minmax(20rem, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(430px,1fr));
+    min-width: 30rem;
+}
+
+.announcements, .trending {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    justify-self:center;
 }
 
 .ann-header, .tren-header {
