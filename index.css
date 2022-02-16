@@ -163,7 +163,7 @@ a {
     justify-content: start;
     row-gap: 30px;
     font-size: 4rem;
-    padding: 20px;
+    padding: 4rem 2rem;
     min-width: 30rem;
 }
 
@@ -233,6 +233,7 @@ a {
     flex-direction: column;
     background-color: rgb(64, 94, 64);
     border-radius: 1.5rem;
+    box-shadow:  0 7px 30px -10px rgba(2, 2, 2, 0.945);
 }
 
 
