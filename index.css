@@ -39,39 +39,76 @@ a {
     grid-column: 2/3;
     grid-row: 1/2;
     font-size: 2.5rem;
-    padding: 10px;
-}
-
-.search {
-    display:flex; 
-    gap: 10px;
+    padding: 1.5rem;
 }
 
 .header-top {
     grid-row: 1/2;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 3fr;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.profile-pic {
+    border-radius:50%;
+    height: 4rem;
+    width: 4rem;;
+}
+
+.header-pic .profile-pic {
+    height:6rem;
+    width:5.5rem;
+}
+
+.search {
+    display:flex; 
+    width:100%;
+    grid-column: 1/2;
+    gap:1.5rem;
+}
+
+.search span {
+    font-size: 3rem;
+    cursor: pointer;
 }
 
 .search-input {
-    width: 70rem;
+    width:min(80%, 70rem);
+    border-radius: 1.5rem;
+    border:none;
+}
+
+.top-icons {
+    grid-column: 2/3;
+    padding-right: 4rem;
 }
 
 .top-icons ul {
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 40px;
+    display:flex;
+    gap: 5rem;
+    padding-right: 2rem;
+    align-items: center;
+}
+
+.top-icons span {
+    font-size: 3rem;
+    cursor: pointer;
 }
 
 .header-bot {
     grid-row:2/3;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    padding-top: 2.5rem;
 }
 
 .header-bot-left {
     display:flex;
-    gap: 10px;
+    gap: 4rem;
+    align-items: center;
 }
 
 .greet-user {
@@ -86,13 +123,21 @@ a {
 
 .username-greet {
     grid-row: 2/3;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .add-content-menu ul {
     display:grid;
     grid-template-columns: repeat(3,1fr);
 }
+
+.add-content-menu .content-btn {
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+    background-color: blue;
+    border:none;
+}  
 
 .sidebar {
     background-color: rgb(240, 144, 144);
@@ -105,6 +150,11 @@ a {
     font-size: 4rem;
     padding: 20px;
     min-width: 30rem;
+}
+
+.sidebar span {
+    font-size: 4rem;
+    cursor: pointer;
 }
 
 .big-main {
@@ -165,17 +215,49 @@ a {
     font-size: 4rem;
     display:flex;
     flex-direction: column;
+    background-color: green;
+    border-radius: 1.5rem;
+}
+
+.project-item {
+    display:grid;
+    grid-template-columns: 1fr 25fr;
+    grid-template-rows: 1fr 4fr 1fr;
 }
 
 .project-title {
     font-size: 3rem;
     font-weight: bold;
     padding: 1rem;
+    background-color: white;
+    grid-column: 2/3;
+    grid-row:1/2;
+    border-radius: 0 1.5rem 0 0;
+}
+
+.project-option-bar {
+    background-color: orange;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    gap:2.5rem;
+    grid-column: 2/3;
+    grid-row:3/4;
+    padding:.2rem 4rem;
+    border-radius: 0 0 1.5rem 0;
+}
+
+.project-option-bar span {
+    font-size: 2.75rem;
+    cursor: pointer;
 }
 
 .project-text {
     font-size: 2.3rem;
     padding: 1rem;
+    background-color: pink;
+    grid-column:2/3;
+    grid-row:2/3;
 }
 
 .content-right-item {
@@ -211,8 +293,12 @@ a {
     font-weight:600;
 }
 
-.main-menu {
-    display:grid;
+.main-menu li {
+    padding-bottom: 1.5rem;
+}
+
+.help-menu li {
+    padding-bottom:1.5rem;
 }
 
 .ann-text, .tren-text {
@@ -220,6 +306,3 @@ a {
     padding:1rem;
 }
 
-.bell {
-    
-}
