@@ -224,7 +224,7 @@ a {
 }
 
 
-.project-item, .content-right-item {
+.project-item, .content-right-item, .exp-content {
     width:auto;
     height:30rem;
     border: none;
@@ -236,7 +236,10 @@ a {
     box-shadow:  0 7px 30px -10px rgba(2, 2, 2, 0.945);
 }
 
-
+.exp-text {
+    padding: 1rem;
+    font-size:2rem;
+}
 
 .project-item {
     display:grid;
@@ -280,7 +283,7 @@ a {
     grid-row:2/3;
 }
 
-.content-right-item {
+.content-right-item, .exp-content {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -328,7 +331,7 @@ a {
     padding-bottom:3rem;
 }
 
-.ann-text, .tren-text {
+.ann-text, .exp-title {
     font-size: 2.3rem;
     padding:1rem;
 }
