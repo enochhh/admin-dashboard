@@ -33,13 +33,13 @@ a {
 }
 
 .header {
-    background-color: rgb(123, 123, 233);
+    background-color: rgb(204, 169, 169);
     display:grid;
     grid-template-rows: 1fr 2fr;
     grid-column: 2/3;
     grid-row: 1/2;
     font-size: 2.5rem;
-    padding: 1.5rem;
+    padding: 3.5rem;
 }
 
 .header-top {
@@ -50,6 +50,11 @@ a {
     justify-content: space-between;
     align-items: center;
     column-gap: 3rem;
+    color:black;
+}
+
+.header-top .material-icons-outlined {
+    color:black;
 }
 
 .profile-pic {
@@ -86,7 +91,7 @@ a {
     padding-right: 4rem;
 }
 
-.top-icons ul {
+.top-icons {
     display:flex;
     gap: 5rem;
     padding-right: 2rem;
@@ -96,6 +101,12 @@ a {
 .top-icons span {
     font-size: 3rem;
     cursor: pointer;
+}
+
+.corner-id {
+    display:flex;
+    align-items: center;
+    column-gap: 1.5rem;
 }
 
 .header-bot {
@@ -127,20 +138,24 @@ a {
 }
 
 .add-content-menu ul {
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 2rem;
 }
 
 .add-content-menu .content-btn {
     padding: 1rem 3rem;
     font-size: 2rem;
     border-radius: 2rem;
-    background-color: blue;
+    background-color: rgb(64, 94, 64);;
     border:none;
+    color:white;
 }  
 
 .sidebar {
-    background-color: rgb(240, 144, 144);
+    background-color: rgb(64, 94, 64);
+    color:white;
     grid-column: 1/2;
     grid-row:1/3;
     display:flex;
@@ -176,7 +191,7 @@ a {
 .main-sidebar {
     grid-row:1/3;
     grid-column: 2/3;
-    background-color: rgb(235, 129, 129);
+    background-color: rgb(231, 211, 211);
     padding: 2rem 2rem;;
 }   
 
@@ -192,12 +207,13 @@ a {
     font-size: 3em;
     font-weight:600;
     padding: 20px 0px 0px 20px;
+    background-color: rgb(231, 211, 211);
 }
 
 .projects {
     grid-row: 2/3;
     display: grid;
-    background-color:purple;
+    background-color: rgb(231, 211, 211);
     width: 100%;   
     grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
     grid-template-rows:repeat(3, 1fr);
@@ -211,13 +227,15 @@ a {
 .project-item, .content-right-item {
     width:auto;
     height:30rem;
-    border: 1px solid orange;
+    border: none;
     font-size: 4rem;
     display:flex;
     flex-direction: column;
-    background-color: green;
+    background-color: rgb(64, 94, 64);
     border-radius: 1.5rem;
 }
+
+
 
 .project-item {
     display:grid;
@@ -236,7 +254,7 @@ a {
 }
 
 .project-option-bar {
-    background-color: orange;
+    background-color:rgb(230, 197, 197);
     display:flex;
     justify-content: end;
     align-items: center;
@@ -250,12 +268,13 @@ a {
 .project-option-bar span {
     font-size: 2.75rem;
     cursor: pointer;
+    padding-bottom: 2rem;
 }
 
 .project-text {
     font-size: 2.3rem;
     padding: 1rem;
-    background-color: pink;
+    background-color: rgb(230, 197, 197);
     grid-column:2/3;
     grid-row:2/3;
 }
@@ -266,6 +285,8 @@ a {
     grid-template-rows: repeat(4, 1fr);
     grid-auto-rows: 1fr;
     font-size: 2.3rem;
+    padding: 1.5rem;
+    color:white;
 }
 
 .content-right-container{
@@ -294,15 +315,37 @@ a {
 }
 
 .main-menu li {
-    padding-bottom: 1.5rem;
+    display:flex;
+    padding-bottom: 3rem;
+}
+
+.main-menu ul {
+    color: white;
 }
 
 .help-menu li {
-    padding-bottom:1.5rem;
+    padding-bottom:3rem;
 }
 
 .ann-text, .tren-text {
     font-size: 2.3rem;
     padding:1rem;
 }
+
+
+li .material-icons-outlined  {
+    color: white;
+}
+
+
+.menu-opt {
+    color:white;
+}
+
+.menu-itm {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
 
